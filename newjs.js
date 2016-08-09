@@ -9,19 +9,12 @@ $(function (){
     type: 'GET', // The HTTP Method, can be GET POST PUT DELETE etc
     data: {sentence: $("#yoda_input").val()},
     datatype: 'json',
-    // success: function (data) {
-    //     $("#yoda_reply").html(data);
-    // },
-    // error: function (err) {
-    //     alert(err);
-    // },
   }).always(alwaysFunction)
     .success(successFunction)
     .fail(failFunction);
 
 function alwaysFunction(){
-console.log("yay!");
-// do we need this? if not take it out
+console.log("Happy!");
 }
 
 function successFunction(data){
@@ -30,7 +23,6 @@ function successFunction(data){
 
 function failFunction(jqXHR, textStatus, errorThrown){
 console.log(errorThrown);
-alert(err);
 }
 });
 });
