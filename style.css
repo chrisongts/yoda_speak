@@ -30,6 +30,10 @@ button {
   margin: 15px auto;
 }
 
+img {
+  height: 30%;
+}
+
 /*#button {
   max-width: 70%;
   margin: 15px auto;
